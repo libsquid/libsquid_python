@@ -136,6 +136,10 @@ def cone_search(proj, lon, lat, rad, kmin, kmax):
          else:
             squidpart.append(sp)
          continue
+      elsif (ccount > 0):
+         # at least one corner is inside search radius
+         squidpart.append(sp)
+         continue
       # Next check if search point is within tile
       if (sp == squid0):
          squidpart.append(sp)
@@ -170,6 +174,10 @@ def cone_search(proj, lon, lat, rad, kmin, kmax):
                   squidfull.append(sp1)
                else:
                   squidpart1.append(sp1)
+               continue
+            elsif (ccount > 0):
+               # at least one corner is inside search radius
+               squidpart.append(sp)
                continue
             # Next check if search point is within tile
             if (sp1 == squid0):
