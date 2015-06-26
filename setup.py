@@ -13,7 +13,7 @@ pysquid_module = Extension('_pysquid',
 setup(name='pysquid',
       author='Jim Wren',
       description='LibSQUID Library Interface for Python',
-      version='0.6.1',
+      version='0.6.2',
       ext_modules=[pysquid_module],
       py_modules=["pysquid"],
 )
