@@ -136,7 +136,7 @@ def cone_search(proj, lon, lat, rad, kmin, kmax):
          else:
             squidpart.append(sp)
          continue
-      elsif (ccount > 0):
+      elif (ccount > 0):
          # at least one corner is inside search radius
          squidpart.append(sp)
          continue
@@ -175,7 +175,7 @@ def cone_search(proj, lon, lat, rad, kmin, kmax):
                else:
                   squidpart1.append(sp1)
                continue
-            elsif (ccount > 0):
+            elif (ccount > 0):
                # at least one corner is inside search radius
                squidpart.append(sp)
                continue
